@@ -375,10 +375,10 @@ nav{
 }
 @media (max-width:950px){
     .heroright{
-        max-width: 100%;
+        max-width: 145%;
     }
     .heroleft{
-        max-width: 100%;
+        max-width: 145%;
     }
     
 }
