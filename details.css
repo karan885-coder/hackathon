@@ -2,7 +2,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-   
 }
 
 .details-container {
@@ -10,59 +9,77 @@ body {
 }
 
 .details-image img {
-    width: 94vw;
-    height: 45vh;
-    margin: 10px 20px;
+    width: 100%;
+    height: auto;
+    max-height: 45vh;
+    margin: 10px 0;
 }
-
 
 .details-heading {
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
+    margin: 20px 0;
 }
+
 .details-para {
-    margin: 10px 20px;
-    line-height: 2.1;
-    font-size: 1.3rem;
-    letter-spacing: 1.2px;
+    margin: 10px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95vw;
-    margin: 0px 23px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0;
 }
-.social .hk{
-    margin-right:20px;
+
+.social .hk {
+    margin-right: 15px;
 }
-.endfooter{
-    margin: 0px 130px;
+
+.endfooter {
+    padding: 10px 0;
     background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
 }
-.endfooter > h2{
+
+.endfooter > h2 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
-    line-height: 2;
-   
+    margin: 0;
 }
-@media(max-width:500px){
-    .header{
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
-    }
-    .details-heading{
-        font-size: 1.2rem;
-        margin-top: 23px;
+
+@media (max-width: 768px) {
+    .details-heading {
+        font-size: 1.5rem;
     }
 
     .details-para {
-        letter-spacing: 1px;
-        line-height: 1.8rem;
-        font-size: 1.1rem;
-        margin: 10px 0px 0px 50px
+        font-size: 1rem;
     }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .social  {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .details-heading {
+        font-size: 1.2rem;
+    }
+
+    .details-para {
+        font-size: 0.9rem;
+    }
+
+    
 }
